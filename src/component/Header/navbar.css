@@ -1,0 +1,39 @@
+header{
+  position: fixed;
+  width: 100%;
+  /* height: 10vh; */
+  background-color: #000000;
+  color: #ffff;
+  z-index: 999;
+}
+.nav-content{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5px 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bars{
+  font-size: 35px;
+}
+.title span{
+  font-family: 'Inknut Antiqua';
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 92.84px;
+}
+.nav-btn{
+  border: none;
+  border: 1px solid #ffffff;
+  border-radius: 48px;
+  padding: 10px 8px;
+  background-color: #0F0F0F;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 840px){
+  .title span{
+    display: none;
+}
+}

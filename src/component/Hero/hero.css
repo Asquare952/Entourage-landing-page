@@ -1,0 +1,31 @@
+.hero {
+  background: url("../../images/hero-background-img.png") no-repeat center
+    center/cover;
+  /* background-size: cover; */
+  height: 768px;
+  width: 100%;
+}
+.hero-content{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+.hero-content p{
+  width: 982px;
+  font-weight: 700;
+  font-size: 64px;
+  margin-top: 6rem;
+  padding: 10px;
+  line-height: 76.8px;
+}
+/* @media screen and (min-width: 768px){
+  .hero-content p{
+  width: 982px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76.8px;
+}
+} */
