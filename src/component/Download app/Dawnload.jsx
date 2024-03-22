@@ -17,11 +17,14 @@ const DownloadApp = () => {
               </div>
             </div>
             <div className="download-right">
-              <div className="app-store-left">
-                <div className="app-store-left"></div>
-                <div className="app-store-right"></div>
-              </div>
-              <div className="app-store"></div>
+              <button className="app-store-left">
+                <div className="app-store-left-content-one"></div>
+                <div className="app-store-left-content-two"></div>
+              </button>
+              <button className="app-store-right">
+                <div className="app-store-right-content-one"></div>
+                <div className="app-store-right-content-two"></div>
+              </button>
             </div>
           </div>
         </div>
