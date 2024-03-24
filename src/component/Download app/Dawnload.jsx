@@ -1,4 +1,8 @@
-import "./dawnload.css"
+import "./dawnload.css";
+import AppStoreImg from '../../images/App Store.png';
+import PlayStoreImg from "../../images/Play Store.png";
+import AppleIcon from "../../images/apple icon.png";
+import PlaystoreIcon from "../../images/playstore icon.png";
 const DownloadApp = () => {
   return (
     <>
@@ -17,13 +21,15 @@ const DownloadApp = () => {
               </div>
             </div>
             <div className="download-right">
-              <button className="app-store-left">
-                <div className="app-store-left-content-one"></div>
-                <div className="app-store-left-content-two"></div>
+              <button className="app-store store">
+                <img src={AppStoreImg} alt="" />
+                {/* <div className="apple"></div>
+                <div className="app-store-content"></div> */}
               </button>
-              <button className="app-store-right">
-                <div className="app-store-right-content-one"></div>
-                <div className="app-store-right-content-two"></div>
+              <button className="play-store store">
+                <img src={PlayStoreImg} alt="" />
+                {/* <div className="app-store-right-content-one"></div>
+                <div className="app-store-right-content-two"></div> */}
               </button>
             </div>
           </div>
@@ -31,6 +37,6 @@ const DownloadApp = () => {
       </section>
     </>
   );
-}
- 
+};
+
 export default DownloadApp;

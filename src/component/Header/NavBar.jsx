@@ -12,7 +12,9 @@ const NavBar = () => {
             <span>Entourage</span>
           </div>
           <div className="login-register">
-            <button className="nav-btn">Login / Register</button>
+            <a href="">
+              <p>Login / Register</p>
+            </a>
           </div>
         </section>
       </header>

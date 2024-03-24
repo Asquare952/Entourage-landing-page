@@ -11,10 +11,10 @@ const HowItWorks = () => {
           <div className="how-it-works-header">
             <div className="how-it-works-title">
               <h4>How it woks</h4>
-              {/* <div className="how-it-works-title-left">
-                <button className="how-it-works-btn">I need a car</button>
-                <button className="how-it-works-btn">I am a dealer</button>
-              </div> */}
+            </div>
+            <div className="how-it-works-btn-container">
+              <p className="how-it-works-btn-active">I need a car</p>
+              <p>I am a dealer</p>
             </div>
             <div className="how-it-works-description">
               <p>
@@ -76,11 +76,9 @@ const HowItWorks = () => {
                 </div>
               </div>
             </div>
-            <div className="how-it-works-right">
-              <div className="how-it-works-right-content">
-                <img src={Jeep} alt="" />
-              </div>
-            </div>
+            {/* <div className="how-it-works-right"> */}
+              <img src={Jeep} alt="" className="how-it-works-right-img" />
+            {/* </div> */}
           </div>
         </div>
       </section>

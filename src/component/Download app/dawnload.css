@@ -1,6 +1,6 @@
 .download-main-container {
   background-color: #0f0f0f;
-  min-height: 50vh;
+  min-height: 40vh;
 }
 .download-sub-container {
   max-width: 1100px;
@@ -11,9 +11,8 @@
 }
 .download-contents {
   display: flex;
-  /* justify-content: center; */
-
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 .download-left {
   display: flex;
@@ -35,11 +34,26 @@
 }
 .download-right{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 1rem;
 }
-.app-store-left{
-  display: flex;
-  align-items: center;
-  gap: .6rem;
+.app-store{
+  width: 193px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 73px;
   background-color: #FFFFFF;
+  cursor: pointer;
+}
+.play-store{
+  width: 193px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 73px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.store img{
+  width: 140.3px;
 }
