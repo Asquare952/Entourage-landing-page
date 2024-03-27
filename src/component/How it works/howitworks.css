@@ -24,7 +24,7 @@
   /* text-align: center; */
 }
 .how-it-works-description p {
-  width: 720px;
+  width: 710px;
   font-weight: 500;
   font-size: 18px;
   line-height: 28.8px;
@@ -132,9 +132,11 @@
   color: #000000;
 }
 .how-it-works-right-img{
+  max-width: 100%;
+  height: auto;
   position: absolute;
   top: 210px;
-  left: 659px;
+  left: 645px;
   padding-top: 7rem;
   padding-bottom: 10rem;
   padding-left: 13rem;

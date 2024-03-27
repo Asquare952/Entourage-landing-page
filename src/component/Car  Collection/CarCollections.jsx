@@ -1,8 +1,7 @@
-import Speedometer from "../../images/speedometer-01.png";
-import ManualGearBox from "../../images/manual-gearbox.png";
-import Users from "../../images/users-01.png";
-import FuelPomp from "../../images/gas-station.png";
-import * as FaIcon  from "react-icons/fa6";
+import Speedometer from "../../assets/speedometer-01.png";
+import ManualGearBox from "../../assets/manual-gearbox.png";
+import Users from "../../assets/users-01.png";
+import FuelPomp from "../../assets/gas-station.png";
 const CarCollections = ({ carsdata }) => {
   return (
     <>
@@ -50,10 +49,6 @@ const CarCollections = ({ carsdata }) => {
             </article>
           );
         })}
-      </div>
-      <div className="see-all-cars">
-        <button className="see-all-cars-btn">See all Cars</button>
-        <FaIcon.FaArrowRight className="arrow-icon"/>
       </div>
     </>
   );

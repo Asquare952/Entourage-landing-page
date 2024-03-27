@@ -1,8 +1,6 @@
 import "./testimonals.css"
 import * as  FaIcon from "react-icons/fa";
-import TestimonalAvatar from "../../images/testimonal-avatar.png";
-// import BackwardArrow from "../../images/backward Icon.png";
-// import ForwardIcon from "../../images/right arrow.png"
+import TestimonalAvatar from "../../assets/testimonal-avatar.png";
 const Testimonals = () => {
   return (
     <>

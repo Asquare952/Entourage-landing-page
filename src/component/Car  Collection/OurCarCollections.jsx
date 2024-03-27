@@ -1,7 +1,8 @@
 import "./collection.css";
 import { useState } from "react";
-import CarCollections  from "./CarCollections";
+import CarCollections from "./CarCollections";
 import carsdata from "../../CarCollectionData";
+import * as FaIcon from "react-icons/fa6";
 // import Collections from "./Collections";
 const OurCarCollections = () => {
   const [cars, setCars] = useState(carsdata);
@@ -30,7 +31,13 @@ const OurCarCollections = () => {
               <button className="filter-btn">Premium Car</button>
             </nav>
           </div>
-          <CarCollections carsdata={cars}/>
+          <CarCollections carsdata={cars} />
+          <div className="see-all-cars">
+            <button className="see-all-cars-btn">
+              See all Cars
+              <FaIcon.FaArrowRight className="arrow-icon" />
+            </button>
+          </div>
         </div>
       </section>
     </>

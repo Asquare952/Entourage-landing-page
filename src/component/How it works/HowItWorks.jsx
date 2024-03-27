@@ -1,8 +1,8 @@
 import "./howitworks.css";
-import SearchIcon from "../../images/search-lg.png";
-import CallenderCheckIcon from "../../images/calendar-check-02.png";
-import SmileEmoji from "../../images/face-happy.png";
-import Jeep from "../../images/jeep.png";
+import SearchIcon from "../../assets/search-lg.png";
+import CallenderCheckIcon from "../../assets/calendar-check-02.png";
+import SmileEmoji from "../../assets/face-happy.png";
+import Jeep from "../../assets/jeep.png";
 const HowItWorks = () => {
   return (
     <>

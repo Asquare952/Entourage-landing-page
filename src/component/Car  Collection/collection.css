@@ -53,7 +53,7 @@
   background-color: #ffffff;
   cursor: pointer;
 }
-.filter-btn .active {
+.active {
   color: #ffffff;
   background-color: #0f0f0f;
 }
@@ -92,6 +92,10 @@
   padding: 15px;
   border-radius: 24px;
   background-color: #ffffff;
+}
+.car-card img{
+  max-width: 100%;
+  height: auto;
 }
 .card-title-container {
   display: flex;
@@ -146,26 +150,32 @@
   background-color: #000000;
 }
 .see-all-cars {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding-bottom: 5rem;
 }
 .see-all-cars-btn {
-  padding: 15px 80px 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  gap: 10px;
+  padding: 15px 50px 15px 40px;
   border: none;
-  border: 1px solid #000000;
+  background-color:#000000;
   border-radius: 64px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  background-color: #ffffff;
+  color: #ffffff;
+  cursor: pointer;
 }
-.see-all-cars-btn:hover {
+/* .see-all-cars-btn:hover {
   color: #FFFFFFFF;
   background-color: #000000;
-}
+} */
 .arrow-icon {
-  position: absolute;
-  top: 18px;
-  left: 597px;
   font-size: 20px;
 }

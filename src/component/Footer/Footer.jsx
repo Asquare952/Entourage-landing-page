@@ -1,8 +1,8 @@
 import "./footer.css"
-import InstagramIcon from '../../images/instagram icon.png';
-import InternetIcon from "../../images/internet icon.png";
-import TwitterIcon from "../../images/twitter icon.png";
-import YouTubeIcon from "../../images/youtube icon.png";
+import InstagramIcon from '../../assets/instagram icon.png';
+import InternetIcon from "../../assets/internet icon.png";
+import TwitterIcon from "../../assets/twitter icon.png";
+import YouTubeIcon from "../../assets/youtube icon.png";
 // import * as FaIcon from "react-icons/fa6";
 const Footer = () => {
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
                   <a href="#services">Services</a>
                 </li>
                 <li>
-                  <a href="contact">Contact Us</a>
+                  <a href="#contact">Contact Us</a>
                 </li>
               </ul>
             </nav>

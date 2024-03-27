@@ -1,11 +1,11 @@
 import "./services.css";
-import StarIcon from "../../images/stars-01.png";
-import CoinsHand from "../../images/coins-hand.png";
-import CheckIcon from "../../images/check-verified-01.png";
+import StarIcon from "../../assets/stars-01.png";
+import CoinsHand from "../../assets/coins-hand.png";
+import CheckIcon from "../../assets/check-verified-01.png";
 const PremiumServices = () => {
   return (
     <>
-      <section className="premium-service-main-container">
+      <section className="premium-service-main-container" id="services">
         <div className="premium-service-sub-container">
           <div className="premium-service-header">
             <div className="premium-service-title">
