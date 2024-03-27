@@ -117,4 +117,7 @@ form {
   /* align-items: center; */
   gap: 16px;
 }
+.date-input {
+  width: 100%;
+}
 }
