@@ -3,6 +3,7 @@ import { useState } from "react";
 import CarCollections from "./CarCollections";
 import carsdata from "../../CarCollectionData";
 import * as FaIcon from "react-icons/fa6";
+import { motion } from "framer-motion";
 // import Collections from "./Collections";
 const OurCarCollections = () => {
   const [cars, setCars] = useState(carsdata);
@@ -33,10 +34,10 @@ const OurCarCollections = () => {
           </div>
           <CarCollections carsdata={cars} />
           <div className="see-all-cars">
-            <button className="see-all-cars-btn">
+            <motion.button className="see-all-cars-btn" whileHover={{scale: 0.9}}>
               See all Cars
               <FaIcon.FaArrowRight className="arrow-icon" />
-            </button>
+            </motion.button>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./navbar.css";
 import * as IoIcons from "react-icons/io";
+import { motion } from "framer-motion";
 const NavBar = () => {
   const [dropDown, setDropDown] = useState(false);
   const showDropDown = () => {
@@ -20,11 +21,11 @@ const NavBar = () => {
           <div className="title">
             <span>Entourage</span>
           </div>
-          <div className="login-register">
+          <motion.div className="login-register" whileHover={{scale: 0.9}}>
             <a href="">
               <p>Login / Register</p>
             </a>
-          </div>
+          </motion.div>
         </section>
         {dropDown ? (
           <nav className="header-nav-links" onClick={showDropDown}>

@@ -2,6 +2,7 @@ import Speedometer from "../../assets/speedometer-01.png";
 import ManualGearBox from "../../assets/manual-gearbox.png";
 import Users from "../../assets/users-01.png";
 import FuelPomp from "../../assets/gas-station.png";
+import { motion } from "framer-motion";
 const CarCollections = ({ carsdata }) => {
   return (
     <>
@@ -9,7 +10,11 @@ const CarCollections = ({ carsdata }) => {
         {carsdata.map((carsdata) => {
           const { id, title, price, image } = carsdata;
           return (
-            <article key={id} className="car-card">
+            <motion.article
+              key={id}
+              className="car-card"
+              whileHover={{ scale: 1.1, border: "1px solid #000000" }}
+            >
               <img src={image} alt={image} />
               <div className="card-title-container">
                 <div className="card-title">
@@ -43,10 +48,15 @@ const CarCollections = ({ carsdata }) => {
                 </div>
 
                 <div className="car-card-btn">
-                  <button className="card-btn">Rent Now</button>
+                  <motion.button
+                    className="card-btn"
+                    whileHover={{ scale: 0.9 }}
+                  >
+                    Rent Now
+                  </motion.button>
                 </div>
               </div>
-            </article>
+            </motion.article>
           );
         })}
       </div>

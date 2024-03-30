@@ -1,6 +1,7 @@
-import "./form.css"
+import "./form.css";
 import * as IoIcons from "react-icons/io5";
-import ArrowRight from "../../assets/right arrow.png"
+import ArrowRight from "../../assets/right arrow.png";
+import { motion } from "framer-motion";
 const Form = () => {
   return (
     <>
@@ -42,10 +43,10 @@ const Form = () => {
               </div> */}
             </form>
             <div className="form-btn">
-              <button>
+              <motion.button whileHover={{ scale: 0.9 }}>
                 Find a Vehicle
                 <img src={ArrowRight} alt="" />
-              </button>
+              </motion.button>
             </div>
           </div>
           {/* <form>
@@ -86,6 +87,6 @@ const Form = () => {
       </section>
     </>
   );
-}
- 
+};
+
 export default Form;
