@@ -3,12 +3,12 @@ import {
   Hero,
   Form,
   About,
-  // CarCollections,
-  // HowItWorks,
-  // Services,
-  // Testimonals,
-  // DownloadApp,
-  // Footer,
+  CarCollections,
+  HowItWorks,
+  Services,
+  Testimonals,
+  DownloadApp,
+  Footer,
 } from "./component";
 function App() {
   return (
@@ -16,12 +16,12 @@ function App() {
       <Hero />
       <Form />
       <About />
-      {/* <CarCollections /> */}
-      {/* <HowItWorks /> */}
-      {/* <Services /> */}
-      {/* <Testimonals /> */}
-      {/* <DownloadApp /> */}
-      {/* <Footer /> */}
+      <CarCollections />
+      <HowItWorks />
+      <Services />
+      <Testimonals />
+      <DownloadApp />
+      <Footer />
     </>
   );
 }

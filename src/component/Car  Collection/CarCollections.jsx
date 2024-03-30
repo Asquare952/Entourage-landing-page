@@ -5,12 +5,12 @@ import FuelPomp from "../../assets/gas-station.png";
 const CarCollections = ({ carsdata }) => {
   return (
     <>
-      <div className="car-card-container">
+      <div className="car-cards-container">
         {carsdata.map((carsdata) => {
           const { id, title, price, image } = carsdata;
           return (
             <article key={id} className="car-card">
-              <img src={image} alt="" />
+              <img src={image} alt={image} />
               <div className="card-title-container">
                 <div className="card-title">
                   <p>{title}</p>
