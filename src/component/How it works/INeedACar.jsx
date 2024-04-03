@@ -1,12 +1,12 @@
 import Jeep from "../../assets/jeep.png";
 import { useState } from "react";
-import Works from "../../HowItWorksData";
+import Works from "../../utils/HowItWorksData";
 const INeedACar = () => {
   const [howItWorks, setHowItWorks] = useState(Works);
 
   return (
     <>
-      <div className="need-car-flex">
+      <div className="need-car-container">
         {howItWorks.map((needacar) => {
           const {id, title, desc, image} = needacar;
           return (

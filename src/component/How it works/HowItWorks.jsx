@@ -44,7 +44,7 @@ const HowItWorksMain = () => {
   };
   return (
     <>
-      <section className="how-it-works-main-container">
+      <section className="how-it-works-main-container" id="howItWorks">
         <div className="how-it-works-sub-container">
           <div className="how-it-works-header">
             <div className="how-it-works-title">

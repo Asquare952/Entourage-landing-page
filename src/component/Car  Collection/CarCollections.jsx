@@ -13,7 +13,7 @@ const CarCollections = ({ carsdata }) => {
             <motion.article
               key={id}
               className="car-card"
-              whileHover={{ scale: 1.1, border: "1px solid #000000" }}
+              whileHover={{ scale: 1.01, border: "1px solid #000000" }}
             >
               <img src={image} alt={image} />
               <div className="card-title-container">

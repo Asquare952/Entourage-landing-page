@@ -1,7 +1,7 @@
 import "./collection.css";
 import { useState } from "react";
 import CarCollections from "./CarCollections";
-import carsdata from "../../CarCollectionData";
+import carsdata from "../../utils/CarCollectionData";
 import * as FaIcon from "react-icons/fa6";
 import { motion } from "framer-motion";
 // import Collections from "./Collections";

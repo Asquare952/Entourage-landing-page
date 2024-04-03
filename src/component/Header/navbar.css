@@ -15,24 +15,17 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.header-nav-links {
-  /* display: none; */
-  position: absolute;
-  width: 100%;
-  min-height: 60vh;
-  background-color: #000000;
-  z-index: 9999;
-  transition: all 0.5s linear;
-}
 .header-nav-links ul {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 3rem;
+  align-items: center;
+  /* margin-top: 3rem; */
   gap: 5rem;
 }
-.header-nav-links li a{
- color: #FFFFFF;
+.header-nav-links li a {
+  color: #ffffff;
+}
+.menu-bar{
+   display: none;
 }
 .close {
   font-size: 35px;
@@ -42,10 +35,9 @@ header {
   font-size: 35px;
   cursor: pointer;
 }
-.title {
-  display: flex;
-}
-.title span {
+.logo a{
+  text-decoration: none;
+  color: #ffff;
   font-family: "Inknut Antiqua";
   font-size: 30px;
   font-weight: 600;
@@ -53,7 +45,7 @@ header {
 }
 .login-register {
   border: none;
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF80;
   border-radius: 48px;
   padding: 7px 20px;
   background-color: #0f0f0f;
@@ -73,9 +65,9 @@ header {
 }
 @media screen and (max-width: 640px) {
   .login-register p {
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 24px;
-  color: #ffffff;
-}
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 24px;
+    color: #ffffff;
+  }
 }

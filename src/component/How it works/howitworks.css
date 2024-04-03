@@ -31,16 +31,7 @@
   letter-spacing: -2%;
   text-align: center;
 }
-.how-it-works-btn-container {
-  position: absolute;
-  top: 13px;
-  /* bottom: 500rem; */
-  left: 1020px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
+/* slider btn style */
 .how-it-works-slider-btn {
   border-radius: 58px;
   padding: 6px 20px;
@@ -70,19 +61,27 @@
   color: #ffffff;
   background-color: #0f0f0f;
 }
-.how-it-works-btn-active {
+.need-car:focus {
   border: none;
   color: #ffffff;
   background-color: #0f0f0f;
 }
+.dealer:focus {
+  border: none;
+  color: #ffffff;
+  background-color: #0f0f0f;
+}
+/* slider btn style end */
+
 /* need car style */
-.need-car-flex {
+.need-car-container {
+  position: relative;
   margin-top: 5rem;
 }
 .need-car-left-container {
   position: absolute;
   top: 250px;
-  left: 192px;
+  left: 12px;
   padding-bottom: 1rem;
   z-index: 1;
 }
@@ -124,9 +123,9 @@
 .need-car-right-img {
   max-width: 100%;
   height: auto;
-  /* position: absolute; */
+  position: absolute;
   top: 210px;
-  right: 645px;
+  right: 45px;
   padding-top: 7rem;
   padding-bottom: 10rem;
   padding-left: 13rem;
