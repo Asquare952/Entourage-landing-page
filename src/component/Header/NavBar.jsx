@@ -12,7 +12,7 @@ const NavBar = () => {
       <header>
         <section className="header-content">
           <div className="logo">
-            <a href="#home">Entourage</a>
+            <a href="/">Entourage</a>
           </div>
           <nav className="header-nav-links" onClick={showDropDown}>
             <ul>

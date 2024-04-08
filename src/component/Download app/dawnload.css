@@ -1,6 +1,8 @@
 .download-main-container {
-  background-color: #0f0f0f;
-  min-height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/download-bg-\ img.jpeg")no-repeat center
+    center/cover;
+  min-height: 292px;
+  width: 100%;
 }
 .download-sub-container {
   max-width: 1100px;

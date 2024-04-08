@@ -1,7 +1,9 @@
 .premium-service-main-container {
-  background-color: #000000;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/premium-bg-img.jpeg") no-repeat center
+    center/cover;
   color: #FFFFFF;
-  min-height: 75vh;
+  min-height: 586px;
+  width: 100%;
 }
 .premium-service-sub-container {
   max-width: 1200px;

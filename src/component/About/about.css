@@ -8,6 +8,14 @@
   min-height: 100vh;
   padding: 0 1rem;
 }
+.about-head p{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43.2px;
+  text-align: center;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
 .about-title h4 {
   font-family: "Inknut Antiqua";
   font-weight: 600;
@@ -17,6 +25,7 @@
 }
 .about-flex {
   display: flex;
+  align-items: center;
   gap: 1rem;
   margin-top: 2.5rem;
 }
