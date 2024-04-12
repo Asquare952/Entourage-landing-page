@@ -10,11 +10,13 @@ const Footer = () => {
       <footer>
         <section className="footer-sub-container">
           <div className="footer-flex">
-            <div className="footer-title">
-              <h4>Entourage</h4>
+            <div className="footer-logo">
+              <h4 className="logo">
+                <a href="/">Entourage</a>
+              </h4>
             </div>
             <nav className="footer-nav-links">
-              <ul>
+              <ul className="footer-links">
                 <li>
                   <a href="#home">Home</a>
                 </li>

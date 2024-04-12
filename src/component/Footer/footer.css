@@ -4,29 +4,29 @@ footer {
   padding: 25px 0;
   border-top: 1px solid #ffffff1a;
 }
-.footer-sub-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 1rem;
-}
 .footer-flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
 }
-.footer-title h4{
+.logo a{
   font-family: 'Inknut Antiqua';
   font-weight: 600;
-  font-size: 36px;
-  line-height: 92.84px;
+  font-size: 16px;
+  line-height: 30.95px;
 }
-.footer-nav-links ul {
+.footer-links{
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.footer-nav-links li a {
+.footerlinks li a {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
   color: #d9dbe1;
 }
 .social-medias ul {
@@ -34,4 +34,41 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+}
+@media screen and (min-width: 768px){
+  .footer-sub-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a{
+  font-family: 'Inknut Antiqua';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 61.9px;
+}
+}
+@media screen and (max-width: 320px){
+  .footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
+}
+
+  .footer-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
 }

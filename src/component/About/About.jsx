@@ -10,6 +10,9 @@ const AboutUs = () => {
           </div>
           <div className="about-flex">
             <div className="about-left">
+              <img src={AboutImg} alt="" />
+            </div>
+            <div className="about-right">
               <div className="about-title">
                 <h4>Entourage</h4>
               </div>
@@ -19,9 +22,6 @@ const AboutUs = () => {
                 for car rentals in Nigeria with more emphasis on comfort, ease
                 of access, convenience and luxury.
               </p>
-            </div>
-            <div className="about-right">
-              <img src={AboutImg} alt="" />
             </div>
           </div>
         </div>

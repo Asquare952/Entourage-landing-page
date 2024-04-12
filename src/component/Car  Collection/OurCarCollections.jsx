@@ -2,12 +2,21 @@ import "./collection.css";
 import { useState } from "react";
 import CarCollections from "./CarCollections";
 import carsdata from "../../utils/CarCollectionData";
-import * as FaIcon from "react-icons/fa6";
-import { motion } from "framer-motion";
-// import Collections from "./Collections";
+import Collections from "./Collections";
+const allCollections = [
+  ...new Set(carsdata.map((car) => car.collection)),
+];
 const OurCarCollections = () => {
-  const [cars, setCars] = useState(carsdata);
-  // const [collections, setCollections] = useState(allCollections);
+  const [collectionItems, setCollectionItems] = useState(carsdata);
+  const [collections, setCollections] = useState(allCollections);
+  const filterCollections = (collection) => {
+    if (collection) {
+      setCollectionItems(carsdata);
+      return;
+    }
+    const newItems = carsdata.filter((car) => car.collection === collection);
+    setCollectionItems(newItems);
+  };
   return (
     <>
       <section className="car-collection-main-container">
@@ -24,21 +33,8 @@ const OurCarCollections = () => {
               </p>
             </div>
           </div>
-          <div className="collection-filter-container">
-            <nav className="collection-filter-btns">
-              <button className="filter-btn active">Popular Car</button>
-              <button className="filter-btn">Luxury Car</button>
-              <button className="filter-btn">Executive Car</button>
-              <button className="filter-btn">Premium Car</button>
-            </nav>
-          </div>
-          <CarCollections carsdata={cars} />
-          <div className="see-all-cars">
-            <motion.button className="see-all-cars-btn" whileHover={{scale: 0.9}}>
-              See all Cars
-              <FaIcon.FaArrowRight className="arrow-icon" />
-            </motion.button>
-          </div>
+          <Collections collections={collections} filterCollections={filterCollections}/>
+          <CarCollections carsdata={collectionItems} />
         </div>
       </section>
     </>

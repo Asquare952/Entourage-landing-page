@@ -2,11 +2,13 @@
   background-color: #f5f5f5;
   min-height: 150vh;
 }
-.car-collection-sub-container {
-  max-width: 1100px;
-  margin: 0 auto;
+/* .car-collection-sub-container {
+  max-width: 1400px;
   width: 100%;
-}
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-items: center;
+} */
 .car-collection-header {
   display: flex;
   justify-content: center;
@@ -36,6 +38,7 @@
   line-height: 28.8px;
   letter-spacing: -2%;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .collection-filter-container {
   display: flex;
@@ -44,10 +47,11 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.collection-filter-btns {
+.btn-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin: 2rem;
 }
 .filter-btn {
   border: none;
@@ -65,18 +69,23 @@
   color: #ffffff;
   background-color: #0f0f0f;
 }
-.active {
+/* .active {
   color: #ffffff;
   background-color: #0f0f0f;
-}
+} */
 .filter-btn:hover {
   color: #ffffff;
   background-color: #0f0f0f;
 }
 .car-cards-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-items: center;
   display: grid;
   gap: 3rem 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 4rem;
 }
 .card-title p {

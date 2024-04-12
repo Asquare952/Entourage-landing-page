@@ -1,26 +1,26 @@
 import "./App.css";
 import {
   Hero,
-  Form,
+  // Form,
   About,
-  CarCollections,
-  HowItWorks,
+  // CarCollections,
+  // HowItWorks,
   Services,
-  Testimonals,
-  DownloadApp,
+  // Testimonals,
+  // DownloadApp,
   Footer,
 } from "./component";
 function App() {
   return (
     <>
       <Hero />
-      <Form />
+      {/* <Form /> */}
       <About />
-      <CarCollections />
-      <HowItWorks />
+      {/* <CarCollections /> */}
+      {/* <HowItWorks /> */}
       <Services />
-      <Testimonals />
-      <DownloadApp />
+      {/* <Testimonals /> */}
+      {/* <DownloadApp /> */}
       <Footer />
     </>
   );

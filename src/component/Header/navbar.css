@@ -6,26 +6,49 @@ header {
   color: #ffff;
   z-index: 1;
 }
-.header-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 5px 9px;
+a{
+  color: #ffff;
+}
+.logo-menu{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: .5rem .5rem;
 }
-.header-nav-links ul {
-  display: flex;
-  align-items: center;
-  /* margin-top: 3rem; */
-  gap: 5rem;
+.use-app-btn{
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: #000000;
+  border-radius: 48px;
+  padding: 5px 15px;
+  background-color: #ffffff;
+  cursor: pointer;
 }
-.header-nav-links li a {
+.header-nav-links{
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-links{
+  height: 10rem;
+}
+.nav-btn-container{
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-btn{
+  height: 10rem;
+}
+.links a {
+  display: block;
+  padding: 0.5rem 1rem;
   color: #ffffff;
 }
 .menu-bar{
-   display: none;
+   display: flex;
 }
 .close {
   font-size: 35px;
@@ -39,12 +62,21 @@ header {
   text-decoration: none;
   color: #ffff;
   font-family: "Inknut Antiqua";
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 92.84px;
+  line-height: 30.95px;
+}
+.nav-btn-container{
+
+  text-align: center;
 }
 .login-register {
+  /* width: 100%; */
   border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
   border: 1px solid #FFFFFF80;
   border-radius: 48px;
   padding: 7px 20px;
@@ -52,22 +84,40 @@ header {
   color: #ffffff;
   cursor: pointer;
 }
-.login-register p {
+@media screen and (min-width: 915px) {
+.header-content {
+  max-width: 1450px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* text-align: center; */
+}
+.use-app-btn{
+  display: none;
+}
+.logo a{
+  text-decoration: none;
+  color: #ffff;
+  font-family: "Inknut Antiqua";
+  font-size: 30px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
+  line-height: 92.84px;
 }
-@media screen and (max-width: 765px) {
-  .title span {
-    display: none;
+ .header-nav-links{
+    height: auto !important;
   }
+.links{
+  display: flex;
+  align-items: center;
+  gap: 44px;
 }
-@media screen and (max-width: 640px) {
-  .login-register p {
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 24px;
-    color: #ffffff;
-  }
+.nav-btn-container{
+  height: auto !important;
+}
+.menu-bar{
+   display: none;
+}
 }

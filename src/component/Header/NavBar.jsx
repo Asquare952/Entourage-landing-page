@@ -11,11 +11,30 @@ const NavBar = () => {
     <>
       <header>
         <section className="header-content">
-          <div className="logo">
-            <a href="/">Entourage</a>
+          <div className="logo-menu">
+            <div className="hearder-logo">
+              <h4 className="logo">
+                <a href="/">Entourage</a>
+              </h4>
+            </div>
+            <div className="use-app">
+              <button className="use-app-btn">Use App</button>
+            </div>
+            <div className="menu-bar">
+              {dropDown ? (
+                <IoIcons.IoMdClose className="close" onClick={showDropDown} />
+              ) : (
+                <IoIcons.IoIosMenu className="bars" onClick={showDropDown} />
+              )}
+            </div>
           </div>
-          <nav className="header-nav-links" onClick={showDropDown}>
-            <ul>
+
+          <nav
+            className={
+              dropDown ? "header-nav-links show-links" : "header-nav-links"
+            }
+          >
+            <ul className="links">
               <li>
                 <a href="#home">Home</a>
               </li>
@@ -30,17 +49,17 @@ const NavBar = () => {
               </li>
             </ul>
           </nav>
-          <motion.div className="login-register" whileHover={{ scale: 0.9 }}>
-            <a href="">
-              <p>Login / Register</p>
-            </a>
-          </motion.div>
-          <div className="menu-bar">
-            {dropDown ? (
-              <IoIcons.IoMdClose className="close" onClick={showDropDown} />
-            ) : (
-              <IoIcons.IoIosMenu className="bars" onClick={showDropDown} />
-            )}
+          <div
+            className={
+              dropDown ? "nav-btn-container show-btn" : "nav-btn-container"
+            }
+          >
+            <motion.button
+              className="login-register"
+              whileHover={{ scale: 0.9 }}
+            >
+              <a href="">Login / Register</a>
+            </motion.button>
           </div>
         </section>
       </header>

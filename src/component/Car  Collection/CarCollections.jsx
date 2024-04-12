@@ -2,13 +2,14 @@ import Speedometer from "../../assets/speedometer-01.png";
 import ManualGearBox from "../../assets/manual-gearbox.png";
 import Users from "../../assets/users-01.png";
 import FuelPomp from "../../assets/gas-station.png";
+import * as FaIcon from "react-icons/fa6";
 import { motion } from "framer-motion";
 const CarCollections = ({ carsdata }) => {
   return (
     <>
       <div className="car-cards-container">
-        {carsdata.map((carsdata) => {
-          const { id, title, price, image } = carsdata;
+        {carsdata.slice(0, 6).map((car) => {
+          const { id, image, title, price } = car;
           return (
             <motion.article
               key={id}
@@ -59,6 +60,12 @@ const CarCollections = ({ carsdata }) => {
             </motion.article>
           );
         })}
+      </div>
+      <div className="see-all-cars">
+        <motion.button className="see-all-cars-btn" whileHover={{ scale: 0.9 }}>
+          See all Cars
+          <FaIcon.FaArrowRight className="arrow-icon" />
+        </motion.button>
       </div>
     </>
   );
